@@ -1,0 +1,27 @@
+{
+  "name": "onlykey-js",
+  "version": "0.4.0",
+  "description": "The OnlyKey command line (onlykey-js), installed in one step: node-onlykey-lib at a tested commit, with its USB and Bluetooth modules",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmatusiak/onlykey-js.git"
+  },
+  "bin": {
+    "onlykey-js": "bin/onlykey-js.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "node-onlykey-lib": "github:bmatusiak/node-onlykey-lib#d5cc1a69601d2dfa688cc6591da29e1b0497ee32"
+  },
+  "optionalDependencies": {
+    "node-hid": "^3.4.0",
+    "@stoprocent/noble": "github:bmatusiak/noble-ble#d41c7dd91130ae04603858249dd91edf2a324053",
+    "dbus-next": "^0.10.2"
+  }
+}
