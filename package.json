@@ -17,7 +17,7 @@
     "node": ">=22"
   },
   "dependencies": {
-    "node-onlykey-lib": "github:bmatusiak/node-onlykey-lib#6c647a815ea073dabea8f1db151255bb67c344c6",
+    "node-onlykey-lib": "github:bmatusiak/node-onlykey-lib#0e8a78ba1c1ea3cd1fec25847354a6d8704695d7",
     "@stoprocent/noble": "github:bmatusiak/noble-ble#d16fc663a0169d69c7f6a467974ce8d2c799d006"
   },
   "optionalDependencies": {

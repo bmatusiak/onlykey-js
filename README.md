@@ -6,7 +6,7 @@ The OnlyKey command line, installed in one step.
 
 npm reads `user/repo` as this GitHub repository (it is not on the npm registry). A version, by its tag or a commit:
 
-    npm install -g bmatusiak/onlykey-js#v0.4.0
+    npm install -g bmatusiak/onlykey-js#<commit>
 
 Then:
 
