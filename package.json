@@ -17,11 +17,11 @@
     "node": ">=22"
   },
   "dependencies": {
-    "node-onlykey-lib": "github:bmatusiak/node-onlykey-lib#d5cc1a69601d2dfa688cc6591da29e1b0497ee32"
+    "node-onlykey-lib": "github:bmatusiak/node-onlykey-lib#6c647a815ea073dabea8f1db151255bb67c344c6",
+    "@stoprocent/noble": "github:bmatusiak/noble-ble#d16fc663a0169d69c7f6a467974ce8d2c799d006"
   },
   "optionalDependencies": {
     "node-hid": "^3.4.0",
-    "@stoprocent/noble": "github:bmatusiak/noble-ble#d41c7dd91130ae04603858249dd91edf2a324053",
     "dbus-next": "^0.10.2"
   }
 }

@@ -23,16 +23,18 @@ modules the library leaves out on purpose (so a web page or a phone app using it
 | module | for | |
 |---|---|---|
 | `node-hid` | a USB OnlyKey | prebuilt for Windows, Linux and macOS |
-| `@stoprocent/noble` ([bmatusiak/noble-ble](https://github.com/bmatusiak/noble-ble), patched) | `--ble` on Windows (a phone running the OnlyKey app) | built from source: needs the C++ build tools |
+| `@stoprocent/noble` ([bmatusiak/noble-ble](https://github.com/bmatusiak/noble-ble), patched) | `--ble` on Windows (a phone running the OnlyKey app) | prebuilt for Windows, Linux and macOS - nothing is compiled |
 | `dbus-next` | `--ble` on Linux, through BlueZ | plain JavaScript |
 
-They are optional: npm installs the ones that build on your machine and skips the rest. If a command needs one that
-is missing, it says which, and how to install it.
+No build tools are needed: every native module comes prebuilt. `node-hid` and `dbus-next` are optional (npm skips
+one that does not install, and a command that needs it says which and how to add it); the noble fork is not, because
+its own optional part for Linux's raw Bluetooth cannot build on Windows, and npm drops everything that is optional
+only through a failed module - an optional noble would go with it, on exactly the system that needs it.
 
 ## Requirements
 
 - Node.js 22 or newer (24 recommended)
-- git (npm fetches the library from GitHub)
+- git (npm fetches the library and the noble fork from GitHub)
 - Linux, for a USB key without root: the OnlyKey udev rules (see the OnlyKey documentation)
 
 ## Updating
